@@ -1,0 +1,16 @@
+package sec3;
+
+public class Print1 {
+
+	public static void main(String[] args) {
+		System.out.print("a");	//ln 빠졌기때문에 줄바꿈 안됨
+		System.out.print("b");
+		System.out.print("c");
+		
+		System.out.println("d");
+		System.out.println("e");
+		System.out.println("f");
+
+	}
+
+}
