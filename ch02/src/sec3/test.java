@@ -12,7 +12,9 @@ public class test {
 //		int result = 5 + byteValue;
 //		float result = 5 + floatValue;
 //		double result = 5 + doubleValue;
-
+		
+		int value = 356;
+		System.out.println((value/100)*100);
 	}
 
 }
