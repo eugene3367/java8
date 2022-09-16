@@ -40,7 +40,7 @@ public class Ref2 {
 		System.out.println("name : "+today.name());
 		System.out.println("original : "+today.ordinal());	// 인덱스를 불러옴 0-6
 		Week day1 = Week.SATURDAY;
-		System.out.println("요일 비교 : "+today.compareTo(day1));	// 비교 - 1:true, 1이아닌값 : false
+		System.out.println("요일 비교 : "+today.compareTo(day1));	// 비교 - 1:trun, 1이아닌값 : false
 		
 		System.out.println();
 		
