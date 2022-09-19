@@ -1,0 +1,70 @@
+package s2;
+
+import java.util.Calendar;
+
+public class Ref2 {
+
+	public static void main(String[] args) {
+		
+		Week today = null;	//내가 지정한거
+		
+		Calendar cal = Calendar.getInstance();//자바에 있는거
+		int w = cal.get(Calendar.DAY_OF_WEEK);	//오늘 날짜의 요일번호 가져오기
+		System.out.println(w);	//1-7(일-토)
+		System.out.println();
+		
+		switch(w){
+			case 1:
+				today = Week.SUNDAY;
+				break;
+			case 2:
+				today = Week.MONDAY;
+				break;
+			case 3:
+				today = Week.TUSEDAY;
+				break;
+			case 4:
+				today = Week.WEDNESDAY;
+				break;
+			case 5:
+				today = Week.THURSDAY;
+				break;
+			case 6:
+				today = Week.FRIDAY;
+				break;
+			case 7:
+				today = Week.SUNDAY;
+				break;
+		}
+		System.out.println("오늘의 요일 : "+today);
+		System.out.println("name : "+today.name());
+		System.out.println("original : "+today.ordinal());	// 인덱스를 불러옴 0-6
+		Week day1 = Week.SATURDAY;
+		System.out.println("요일 비교 : "+today.compareTo(day1));	// 비교 - 1:true, 1이아닌값 : false
+		
+		System.out.println();
+		
+		Week[] days = Week.values();	// 값을 불러옴
+		for(Week day : days){
+			System.out.println(day);
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
