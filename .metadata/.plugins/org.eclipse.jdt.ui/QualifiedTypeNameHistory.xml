@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="sec2.Week"/>
 <fullyQualifiedTypeName name="sec2.Car"/>
+<fullyQualifiedTypeName name="sec2.Student_teacher"/>
 </qualifiedTypeNameHistroy>
