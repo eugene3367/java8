@@ -1,6 +1,5 @@
 package sec2;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public class Board {
@@ -8,7 +7,7 @@ public class Board {
 	private String title;
 	private String content;
 	private String name;
-	private Date date;
+	private String date;
 	
 	Scanner scanner = new Scanner(System.in);
 	
@@ -46,11 +45,11 @@ public class Board {
 		this.name = name;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	
@@ -62,7 +61,7 @@ public class Board {
 //		this.num=num;this.title=title;this.content=content;this.name=name;
 //	}
 	
-	public void boardWrite(int num, String title, String content, String name, Date date) {
+	public void boardWrite(int num, String title, String content, String name, String date) {
 
 		this.num = num;
 		this.title = title;
@@ -88,8 +87,6 @@ public class Board {
 		if(num==this.num){
 			this.title=title;
 			this.content=content;
-			
-			
 		}
 //		this.num=num;this.title=title;this.content=content;
 		}
@@ -100,7 +97,7 @@ public class Board {
 //
 //	}
 	
-	public void boardDelete(int num){
+	public void voardDelete(int num){
 		if(num==this.num){
 			
 //			try{

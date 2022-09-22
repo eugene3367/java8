@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ProductEx{
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(Sytem.in);
 		
 		Product pro1 = new Product();
 		pro1.setPid ("a01");
@@ -29,7 +29,7 @@ public class ProductEx{
 		
 		System.out.println("*입고처리*");
 		System.out.println("제품코드\t제품명\t제품수량\t제품가격\t이미지");
-		System.out.println(pro2.getPid()+"\t"+pro2.getPname()+"\t"+pro2.getAmount()+"\t"+pro2.getPrice()+"\t"+pro2.getImg()+"\t");
+		System.out.println("\t""\t""\t""\t""\t");
 		
 		
 		System.out.println("금액 : "+pro1.calcMoney());
