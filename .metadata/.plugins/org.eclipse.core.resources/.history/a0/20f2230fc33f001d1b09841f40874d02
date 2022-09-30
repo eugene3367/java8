@@ -1,0 +1,13 @@
+package sec2;
+
+import java.io.FileInputStream;
+
+public class Exception6 {
+
+	public static void main(String[] args) {
+		FileInputStream fis = null;
+		fis = new FileInputStream("file.txt");
+
+	}
+
+}

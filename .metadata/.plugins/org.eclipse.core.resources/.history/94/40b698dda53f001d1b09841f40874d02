@@ -1,0 +1,31 @@
+package sec3;
+
+public class DbBoard implements Dbjob{
+
+	@Override
+	public void insert() {
+		System.out.println("insert into board values(?,?,?");
+		
+	}
+
+	@Override
+	public void update() {
+		System.out.println("update board set=? where bid=?");
+		
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void select() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

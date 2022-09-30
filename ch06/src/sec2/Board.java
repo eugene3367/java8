@@ -1,136 +1,72 @@
 package sec2;
 
 import java.util.Date;
-import java.util.Scanner;
 
 public class Board {
-	private int num;
+	private int idx;
 	private String title;
 	private String content;
-	private String name;
-	private Date date;
+	private String author;
+	private Date resdate;
 	
-	Scanner scanner = new Scanner(System.in);
-	
-	
-
-	public int getNum() {
-		return num;
+	public int getIdx() {
+		return idx;
 	}
-
-	public void setNum(int num) {
-		this.num = num;
+	public void setIdx(int idx) {
+		this.idx = idx;
 	}
-
 	public String getTitle() {
 		return title;
 	}
-
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
 	public String getContent() {
 		return content;
 	}
-
 	public void setContent(String content) {
 		this.content = content;
 	}
-
-	public String getName() {
-		return name;
+	public String getAuthor() {
+		return author;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setAuthor(String author) {
+		this.author = author;
 	}
-
-	public Date getDate() {
-		return date;
+	public Date getResdate() {
+		return resdate;
 	}
-
-	public void setDate(Date date) {
-		this.date = date;
+	public void setResdate(Date resdate) {
+		this.resdate = resdate;
 	}
 	
-//	public Board(){}
-	
-//	public Board(int num,String title){this.num=num;this.title=title;}
-
-//	public Board(int num,String title,String content,String name){
-//		this.num=num;this.title=title;this.content=content;this.name=name;
-//	}
-	
-	public void boardWrite(int num, String title, String content, String name, Date date) {
-
-		this.num = num;
+	public void boardWrite(int idx, String title, String content, String author, Date resdate){
+		this.idx = idx;
 		this.title = title;
 		this.content = content;
-		this.name = name;
-		this.date = date;
+		this.author = author;
+		this.resdate = resdate;
 	}
-	
-//	public void boardWrite(){
-//		System.out.print("글번호 : ");
-//		num=scanner.nextInt();
-//		System.out.print("글제목 : ");
-//		title=scanner.next();
-//		System.out.print("글내용 : ");
-//		content=scanner.next();
-//		System.out.print("작성자 : ");
-//		name=scanner.next();
-//		System.out.print("작성일 : ");
-//		date=scanner.next();
-//	}
-	
-	public void boardUpdate(int num,String title,String content){
-		if(num==this.num){
-			this.title=title;
-			this.content=content;
-			
-			
-		}
-//		this.num=num;this.title=title;this.content=content;
-		}
-	
-//	public void boardUpdate(){
-//		System.out.print("내용 수정:");
-//		content=scanner.next();
-//
-//	}
-	
-	public void boardDelete(int num){
-		if(num==this.num){
-			
-//			try{
-//				this.finalize();
-//			}catch(Throwable e){
-//				e.printStackTrace();
-//			}
-			
-			this.title="";
-			this.content="";
-			this.name="";
-		}
-		}
-	
-	
-//	public void boardDelete(){
-//		content=null;
-//		System.out.println("글삭제");
-//	}
-	
-	public void boardSearch(int num){
-		if(num==this.num){
-			System.out.println(this.num+"\t"+this.title+"\t"+this.content+"\t"+this.name+"\t"+this.date+"\t");
+	public void boardUpdate(int idx, String title, String content){
+		if(idx==this.idx){
+			this.title = title;
+			this.content = content;
 		}
 	}
-	
-	
-//	public void boardSearch(){
-//		System.out.println(this.content);
-//	}
-	
-
+	public void boardDelete(int idx){
+		if(idx==this.idx){
+			try {
+				this.finalize();
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public void boardSearch(int idx){
+		if(idx==this.idx){
+			System.out.println(this.idx+"\t"+this.title+"\t"
+					+this.content+"\t"+this.author+"\t"
+					+this.resdate);
+		}
+	}
 }
