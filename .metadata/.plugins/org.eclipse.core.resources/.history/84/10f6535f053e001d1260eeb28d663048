@@ -1,7 +1,0 @@
-package sec3;
-
-public class MotorCycle {
-	Tire frontTire = new Tire();
-	Tire backTire = new Tire();
-
-}

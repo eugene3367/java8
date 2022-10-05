@@ -7,6 +7,7 @@ eclipse.preferences.version=1
 fontPropagated=true
 java_multi_line_comment=239,192,165
 java_single_line_comment=239,192,165
+markOccurrences=false
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
