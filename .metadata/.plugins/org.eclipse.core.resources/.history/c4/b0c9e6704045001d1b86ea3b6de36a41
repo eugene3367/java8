@@ -1,0 +1,37 @@
+package sec1;
+
+public class ThreadEx3 {
+
+	public static void main(String[] args) {
+		Thread th0 = new Thread(new ThreadWithRunnable());
+		th0.start();
+		System.out.println(th0.getThreadGroup());
+		
+		ThreadGroup group = new ThreadGroup("myGroup");
+		group.setMaxPriority(7);
+		
+		Thread th1 = new Thread(group, new ThreadWithRunnable());
+		th1.start();
+		Thread th2 = new Thread(group, new ThreadWithRunnable());
+		th2.start();
+		group.setMaxPriority(10);
+		System.out.println(th1.getThreadGroup());
+		
+		Thread.State state = th0.getState();
+		if(state==Thread.State.NEW){
+			System.out.println("start");
+		}else if(state==Thread.State.RUNNABLE);{
+			System.out.println("prepare");
+		} if(state==Thread.State.TERMINATED){
+			System.out.println("end");
+		}else if(state==Thread.State.BLOCKED){
+			System.out.println("block");
+		}else if(state==Thread.State.TIMED_WAITING){
+			System.out.println("waiting");
+		}else{
+			System.out.println("..?");
+		}
+
+	}
+
+}
